@@ -1,7 +1,7 @@
 from flask import Flask
 from MlProject.logger import logging
 from MlProject.exception import CustomException
-import os, sys
+import sys
 
 app = Flask(__name__)
 
