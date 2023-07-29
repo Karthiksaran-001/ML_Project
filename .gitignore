@@ -116,6 +116,10 @@ __pypackages__/
 celerybeat-schedule
 celerybeat.pid
 
+## Data
+Data/
+notebook/.ipynb_checkpoints
+
 # SageMath parsed files
 *.sage.py
 
