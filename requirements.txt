@@ -4,5 +4,6 @@ folium
 sklearn
 seaborn
 matplotlib
+plotly
 notebook
 -e .
