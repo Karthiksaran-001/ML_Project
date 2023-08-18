@@ -29,8 +29,9 @@ TEST_DATA_DIR_KEY = "test.csv"
 # Data Transformation related variable
 
 DATA_TRANSFORMATION_ARTIFACT = "data_transformation"
-DATA_PREPROCCED_DIR = "procceor"
+DATA_PREPROCCED_DIR = "processor"
 DATA_TRANSFORMTION_PROCESSING_OBJ = "processor.pkl"
 DATA_TRANSFORM_DIR = "transformation"
 TRANSFORM_TRAIN_DIR_KEY = "train.csv"
 TRANSFORM_TEST_DIR_KEY = "test.csv"
+
