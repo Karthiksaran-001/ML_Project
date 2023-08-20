@@ -9,6 +9,7 @@ from dataclasses import dataclass
 from MlProject.logger import logging
 from MlProject.exception import CustomException
 from MlProject.components.data_transformation import DataTransformation
+from MlProject.components.model_trainer import  ModelTrainer
 
 @dataclass
 class DataIngestionConfig:
@@ -47,7 +48,10 @@ class DataIngestion:
             raise CustomException( e, sys)
 
 if __name__ == "__main__":
-    obj = DataIngestion()
-    train_data_path,test_data_path=obj.iniitiate_data_ingestion()
+    data_ingestion = DataIngestion()
+    train_data_path,test_data_path=data_ingestion.iniitiate_data_ingestion()
     data_transformation = DataTransformation()
     train_arr,test_arr,_ = data_transformation.inititate_data_transformation(train_data_path,test_data_path)
+    model_training = ModelTrainer()
+    model_training.initiate_model_training(train_arr , test_arr)
+    

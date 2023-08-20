@@ -35,3 +35,7 @@ DATA_TRANSFORM_DIR = "transformation"
 TRANSFORM_TRAIN_DIR_KEY = "train.csv"
 TRANSFORM_TEST_DIR_KEY = "test.csv"
 
+# model Training
+
+MODEL_TRAINER_KEY = 'model_trainer'
+MODEL_OBJECT = 'model.pkl'
